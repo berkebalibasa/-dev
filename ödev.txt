@@ -1,0 +1,14 @@
+tek_toplam = 0
+cift_toplam = 0
+baslangic = 1
+bitis =  int(input("Kaça kadar ?"))
+while baslangic <= bitis:
+    if bitis % 2 == 0:
+        print(f"Sayıların Kareleri: {baslangic**2}")
+        cift_toplam += baslangic**2
+        print(f"Toplam {cift_toplam}")
+    else:
+        print(f"Sayıların Kübü: {baslangic ** 3}")
+        tek_toplam += baslangic ** 3
+        print(f"Toplam {tek_toplam}")
+    baslangic += 1
